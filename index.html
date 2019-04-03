@@ -1,0 +1,84 @@
+<!-- 溯源项目页面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css">
+    <title>溯源页面</title>
+  </head>
+  <body>
+    <div class="sections m-auto">
+      <div class="header-section w-100">
+        <h1
+          class="text-hide"
+          style="background-image: url(https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg);
+          width: 50px;
+          height: 50px;"
+        >
+          溯源项目
+        </h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="nav-section container p-0 mt-3 mb-5">
+        <ul class="nav nav-pills mb-3 row text-center" id="pills-tab" role="tablist">
+          <li class="nav-item col">
+            <a class="nav-link active" id="pills-product-tab" data-toggle="pill" href="#pills-product" role="tab" aria-controls="pills-product" aria-selected="true">产品信息</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" id="pills-source-tab" data-toggle="pill" href="#pills-source" role="tab" aria-controls="pills-source" aria-selected="false">溯源信息</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" id="pills-seller-tab" data-toggle="pill" href="#pills-seller" role="tab" aria-controls="pills-seller" aria-selected="false">经销商信息</a>
+          </li>
+        </ul>
+        <div class="tab-content p-2" id="pills-tabContent">
+          <div class="tab-pane fade show active font-weight-bold" id="pills-product" role="tabpanel" aria-labelledby="pills-product-tab">
+            <table class="table table-bordered">
+                <tbody class="text-center">
+                  <tr>
+                    <th class="w-25 table-active">规格</th>
+                    <td>50*80CM</td>
+                  </tr>
+                  <tr>
+                    <th class="w-25 table-active">重量</th>
+                    <td>1.2KG</td>
+                  </tr>
+                  <tr>
+                    <th class="w-25 table-active">建议零售价</td>
+                    <td>RMB 1800元</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="product-img mt-2 mb-3">
+                <img src="./images/productInfo.jpg" width="100%" alt="产品信息">
+              </div>
+              <div class="mb-5"><a href="#">进入公众号</a></div>
+          </div>
+          <div class="tab-pane fade font-weight-bold" id="pills-source" role="tabpanel" aria-labelledby="pills-source-tab">
+            暂无溯源信息
+          </div>
+          <div class="tab-pane fade font-weight-bold" id="pills-seller" role="tabpanel" aria-labelledby="pills-seller-tab">
+              <p>公司名称：郑州某某科技有限公司</p>
+              <p>电话：0755-88888888</p>
+              <p>地址：深圳市龙华区工业路龙胜时代大厦505</p>
+              <img src="./images//seller.png" alt="经销商信息">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./plugin/jquery-3.3.1.js"></script>
+    <script src="./plugin/swiper-dist/js/swiper.min.js"></script>
+    <script src="./plugin/bootstrap-dist/js/bootstrap.min.js"></script> 
+    <script src="./index.js"></script>
+  </body>
+</html>
